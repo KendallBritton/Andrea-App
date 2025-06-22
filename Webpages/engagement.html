@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Engagement</title>
+    <link rel="stylesheet" href="../StyleSheets/engagement.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="../index.html" class="back-btn" title="Back to Main Page">&#8592; Back</a>
+
+        <!-- Header Text Section -->
+        <div class="section-header">Our Engagement Story</div>
+
+        <div class="section-text">
+            This is where you can share a heartfelt introduction or story about your engagement. Describe the moment, the feelings, or anything meaningful you want to highlight for visitors.
+        </div>
+
+        <!-- First Video Section -->
+        <div class="video-section">
+            <video controls poster="../Images/Engagement/video1-thumb.jpg">
+                <source src="../Videos/Engagement/engagement1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Gallery Highlight Section -->
+        <div id="gallery-highlight-section">
+            <img id="highlight-photo" class="highlight-photo" src="../Images/Engagement/gallery1.jpg" alt="Highlighted Engagement Photo">
+            <div class="gallery-grid">
+                <img src="../Images/Engagement/gallery1.jpg" alt="Engagement Photo 1" class="selected">
+                <img src="../Images/Engagement/gallery2.jpg" alt="Engagement Photo 2">
+                <img src="../Images/Engagement/gallery3.jpg" alt="Engagement Photo 3">
+                <img src="../Images/Engagement/gallery4.jpg" alt="Engagement Photo 4">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="view-gallery-btn" id="viewGalleryBtn">View Entire Gallery</button>
+        </div>
+
+        <!-- Modal for Full Gallery -->
+        <div class="modal" id="galleryModal">
+            <div class="modal-content">
+                <div class="modal-gallery-grid">
+                    <img src="../Images/Engagement/gallery1.jpg" alt="Engagement Photo 1">
+                    <img src="../Images/Engagement/gallery2.jpg" alt="Engagement Photo 2">
+                    <img src="../Images/Engagement/gallery3.jpg" alt="Engagement Photo 3">
+                    <img src="../Images/Engagement/gallery4.jpg" alt="Engagement Photo 4">
+                    <!-- Add more images as needed -->
+                </div>
+                <button class="close-modal-btn" id="closeModalBtn">Close Gallery</button>
+            </div>
+        </div>
+
+        <!-- Second Video Section -->
+        <div class="video-section">
+            <video controls poster="../Images/Engagement/video2-thumb.jpg">
+                <source src="../Videos/Engagement/engagement2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Final Text Section -->
+        <div class="section-text">
+            Thank you for being a part of our journey! We are so grateful to share these memories and look forward to making many more together.
+        </div>
+    </div>
+    <script src="../JavaScript/engagement.js"></script>
+</body>
+</html>
