@@ -1,0 +1,145 @@
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f6f7fb;
+        color: #2d3748;
+    }
+
+    .accomplishments-container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 24px;
+        background: rgba(255,255,255,0.95);
+        border-radius: 18px;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+        position: relative; /* Ensure the button is positioned relative to the container */
+    }
+
+    .accomplishments-title {
+        text-align: center;
+        font-size: 2.2em;
+        color: #d15822;
+        margin-top: 48px;
+        margin-bottom: 32px;
+        letter-spacing: 1px;
+    }
+
+    .accomplishments-row {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 36px;
+        flex-wrap: wrap;
+    }
+
+    .accomplishment-item {
+        flex: 1 1 200px;
+        max-width: 240px;
+        min-width: 180px;
+        background: #f8fafc;
+        border-radius: 14px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 18px 10px;
+        text-align: center;
+    }
+
+    .accomplishment-media {
+        width: 100%;
+        height: 140px;
+        background: #d2d1f1;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .accomplishment-media img,
+    .accomplishment-media video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .accomplishment-caption {
+        font-size: 1em;
+        color: #a11d20;
+        margin-top: 6px;
+    }
+
+    .accomplishments-links {
+        margin-top: 32px;
+    }
+
+    .accomplishments-links ul {
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .accomplishments-links li {
+        margin-bottom: 10px;
+        font-size: 1.08em;
+    }
+
+    .accomplishments-links a {
+        display: inline-block;
+        background: #fff;
+        color: #d15822;
+        border: 1.5px solid #d15822;
+        border-radius: 8px;
+        padding: 7px 16px;
+        font-size: 1em;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: background 0.2s, color 0.2s, border 0.2s;
+        margin-bottom: 6px;
+    }
+
+    .accomplishments-links a:hover,
+    .accomplishments-links a:focus {
+        background: #d15822;
+        color: #fff;
+        border-color: #d15822;
+        text-decoration: none;
+    }
+
+    .back-btn {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        background: #fff;
+        color: #d15822;
+        border: 1.5px solid #d15822;
+        border-radius: 8px;
+        padding: 7px 16px;
+        font-size: 1em;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: background 0.2s, color 0.2s, border 0.2s;
+        z-index: 10;
+    }
+
+    .back-btn:hover, .back-btn:focus {
+        background: #d15822;
+        color: #fff;
+        border-color: #d15822;
+    }
+
+    @media (max-width: 900px) {
+        .accomplishments-row {
+            flex-direction: column;
+            gap: 28px;
+            align-items: center;
+        }
+        .accomplishment-item {
+            max-width: 400px;
+            width: 100%;
+        }
+    }
