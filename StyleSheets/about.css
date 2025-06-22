@@ -13,13 +13,13 @@
         border-radius: 18px;
         box-shadow: 0 4px 32px rgba(0,0,0,0.07);
         position: relative; /* Ensure the button is positioned relative to the container */
-        padding-top: 56px; /* Add space for the back button */
     }
 
     .about-title {
         text-align: center;
         font-size: 2.4em;
         color: #d15822;
+        margin-top: 48px;    /* Add this line */
         margin-bottom: 32px;
         letter-spacing: 1px;
     }
