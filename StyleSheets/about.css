@@ -83,6 +83,10 @@
         border-color: #d15822;
     }
 
+    .heart {
+        color: #a11d20;
+    }
+
     @media (max-width: 800px) {
         .about-container {
             padding: 10px;
