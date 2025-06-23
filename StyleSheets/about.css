@@ -36,17 +36,21 @@
     }
 
     .about-img-placeholder {
-        flex: 0 0 180px;
-        height: 180px;
-        background: linear-gradient(135deg, #d2d1f1 60%, #fff 100%);
-        border-radius: 16px;
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #f6f7fb;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #a11d20;
-        font-size: 1.2em;
-        font-weight: 600;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .about-img-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .about-text {
