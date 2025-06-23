@@ -1,0 +1,209 @@
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f6f7fb;
+        color: #2d3748;
+    }
+
+    .love-letter-container {
+        max-width: 420px;
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .envelope {
+        width: 320px;
+        height: 200px;
+        background: #fffaf4;
+        border: 2.5px solid #d15822;
+        border-radius: 18px 18px 32px 32px;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+        position: relative;
+        cursor: pointer;
+        transition: box-shadow 0.2s, transform 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .envelope:hover {
+        box-shadow: 0 8px 40px rgba(209,88,34,0.13);
+        transform: translateY(-4px) scale(1.03);
+    }
+
+    .envelope-text {
+        font-family: 'Dancing Script', cursive, 'Segoe UI', Arial, sans-serif;
+        font-size: 1.5em;
+        color: #a11d20;
+        text-align: center;
+        z-index: 1;
+        pointer-events: none;
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2em;
+    }
+
+    .envelope-heart {
+        position: static;
+        transform: none;
+        font-size: 2.2em;
+        margin: 0.1em 0;
+        order: 1;
+        z-index: 1;
+        pointer-events: none;
+        user-select: none;
+        animation: pulse-heart 1.2s infinite;
+    }
+
+    @keyframes pulse-heart {
+        0% { transform: scale(1);}
+        30% { transform: scale(1.18);}
+        50% { transform: scale(1);}
+        70% { transform: scale(1.12);}
+        100% { transform: scale(1);}
+    }
+
+    .note-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0; top: 0; width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.45);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .note-modal.open {
+        display: flex;
+    }
+
+    .note-content {
+        background: #fffaf4;
+        border: 2.5px solid #d15822;
+        border-radius: 18px;
+        padding: 32px 28px;
+        max-width: 400px;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.13);
+        font-family: 'Dancing Script', cursive, 'Segoe UI', Arial, sans-serif;
+        font-size: 1.25em;
+        color: #a11d20;
+        text-align: left;
+        position: relative;
+    }
+
+    .close-note-btn {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        background: none;
+        border: none;
+        font-size: 1.3em;
+        color: #d15822;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .close-note-btn:hover {
+        color: #a11d20;
+    }
+
+    /* Add to your style block or reminder.css */
+    .note-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .note-pagination button {
+        background: #fff;
+        color: #d15822;
+        border: 1.5px solid #d15822;
+        border-radius: 8px;
+        padding: 5px 14px;
+        font-size: 1em;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s, border 0.2s;
+    }
+
+    .note-pagination button.active,
+    .note-pagination button:hover {
+        background: #d15822;
+        color: #fff;
+        border-color: #d15822;
+    }
+
+    .back-btn {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        background: #fff;
+        color: #d15822;
+        border: 1.5px solid #d15822;
+        border-radius: 8px;
+        padding: 7px 16px;
+        font-size: 1em;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: background 0.2s, color 0.2s, border 0.2s;
+        z-index: 10;
+    }
+
+    .hearts-rain-container {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        height: 120px;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .heart-float {
+        position: fixed;
+        font-size: 1.5em;
+        color: #ff6f91;
+        opacity: 0.85;
+        animation: float-heart 5s linear forwards; /* Increased from 2.8s to 5s */
+        user-select: none;
+        pointer-events: none;
+        filter: drop-shadow(0 2px 8px #ffb6d5aa);
+        z-index: 0;
+        left: 50%; /* fallback, will be overridden inline */
+        bottom: 0;
+    }
+    
+    @keyframes float-heart {
+        0% {
+            opacity: 0;
+            transform: translateY(0) scale(0.7) rotate(-10deg);
+        }
+        10% {
+            opacity: 0.85;
+        }
+        60% {
+            opacity: 1;
+            transform: translateY(-60vh) scale(1.1) rotate(10deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100vh) scale(1) rotate(-12deg);
+        }
+    }
+
+    .back-btn:hover, .back-btn:focus {
+        background: #d15822;
+        color: #fff;
+        border-color: #d15822;
+    }
+
+    @media (max-width: 500px) {
+        .love-letter-container { max-width: 98vw; }
+        .envelope { width: 98vw; }
+        .note-content { max-width: 95vw; }
+    }
