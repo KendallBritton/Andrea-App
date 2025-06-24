@@ -143,3 +143,14 @@
             width: 100%;
         }
     }
+
+    @media (max-width: 600px) {
+    .accomplishment-media {
+        height: 220px;
+    }
+    .accomplishment-media img,
+    .accomplishment-media video {
+        height: 220px;
+        max-height: 220px;
+    }
+}
