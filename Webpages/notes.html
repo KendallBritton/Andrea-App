@@ -13,29 +13,53 @@
 
         <div class="notes-title">Written Notes & Cards</div>
 
-        <div class="card-list">
-
-            <!-- Card 1 -->
-            <div class="ui-card" data-pages='["Thank you for always being there for me. Your support means the world to me!", "I cherish every moment we spend together and look forward to many more adventures."]'>
-                <div class="card-header">Birthday Card</div>
-                <div class="card-content"></div>
-                <div class="card-pagination"></div>
+        <!-- Birthday Cards Section -->
+        <div class="card-section">
+            <div class="card-section-title">Birthday Cards</div>
+            <div class="card-list" id="birthday-cards">
+                <div class="ui-card" data-pages='["Happy Birthday to the most wonderful person! May your day be filled with love and laughter.", "Wishing you all the happiness in the world today and always."]'>
+                    <div class="card-header">Birthday Card 1</div>
+                </div>
+                <div class="ui-card" data-pages='["Another year, another adventure! Happy Birthday!", "Thank you for making every year brighter."]'>
+                    <div class="card-header">Birthday Card 2</div>
+                </div>
             </div>
+        </div>
 
-            <!-- Card 2 -->
-            <div class="ui-card" data-pages='["Congratulations on your amazing achievement! You inspire everyone around you.", "Keep reaching for the stars. I’m so proud of you!"]'>
-                <div class="card-header">Congratulations Note</div>
-                <div class="card-content"></div>
-                <div class="card-pagination"></div>
+        <!-- Congratulations Cards Section -->
+        <div class="card-section">
+            <div class="card-section-title">Congratulations Cards</div>
+            <div class="card-list" id="congrats-cards">
+                <div class="ui-card" data-pages='["Congratulations on your amazing achievement! You inspire everyone around you.", "Keep reaching for the stars. I’m so proud of you!"]'>
+                    <div class="card-header">Congratulations Card 1</div>
+                </div>
+                <div class="ui-card" data-pages='["You did it! Your hard work paid off.", "This is just the beginning of even greater things."]'>
+                    <div class="card-header">Congratulations Card 2</div>
+                </div>
             </div>
+        </div>
 
-            <!-- Card 3 -->
-            <div class="ui-card" data-pages='["Just a little reminder that you are loved and appreciated.", "Never forget how special you are to so many people."]'>
-                <div class="card-header">Just Because</div>
-                <div class="card-content"></div>
-                <div class="card-pagination"></div>
+        <!-- Just Because Cards Section -->
+        <div class="card-section">
+            <div class="card-section-title">Just Because Cards</div>
+            <div class="card-list" id="justbecause-cards">
+                <div class="ui-card" data-pages='["Just a little reminder that you are loved and appreciated.", "Never forget how special you are to so many people."]'>
+                    <div class="card-header">Just Because Card 1</div>
+                </div>
+                <div class="ui-card" data-pages='["Thinking of you and hoping you have a wonderful day!", "You bring so much joy to those around you."]'>
+                    <div class="card-header">Just Because Card 2</div>
+                </div>
             </div>
+        </div>
 
+        <!-- Card Viewer Modal -->
+        <div class="card-viewer-modal" id="cardViewerModal" style="display:none;">
+            <div class="card-viewer-content">
+                <button class="close-card-viewer" id="closeCardViewerBtn" title="Close">&times;</button>
+                <div class="card-header" id="viewerCardHeader"></div>
+                <div class="card-content" id="viewerCardContent"></div>
+                <div class="card-pagination" id="viewerCardPagination"></div>
+            </div>
         </div>
     </div>
     <script src="../JavaScript/notes.js"></script>

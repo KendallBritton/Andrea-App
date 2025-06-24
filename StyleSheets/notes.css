@@ -24,22 +24,54 @@
         letter-spacing: 1px;
     }
 
+    /* Card List Layout */
     .card-list {
         display: flex;
-        flex-direction: column;
-        gap: 32px;
+        flex-wrap: wrap;
+        gap: 28px;
+        align-items: flex-start;
+        margin-bottom: 32px;
     }
 
+    /* Card Item Format (like accomplishment-item) */
     .ui-card {
-        background: #fffaf4;
-        border-radius: 14px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        padding: 24px 18px 18px 18px;
-        position: relative;
-        min-height: 200px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        padding: 0;
+        width: 260px;
+        min-height: 260px;
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        transition: box-shadow 0.2s, transform 0.2s;
+        cursor: pointer;
+        border: 1.5px solid #f3e3d6;
+        position: relative;
+    }
+
+    .ui-card:hover, .ui-card:focus {
+        box-shadow: 0 6px 24px rgba(209,88,34,0.13);
+        transform: translateY(-4px) scale(1.03);
+        border-color: #d15822;
+    }
+
+    /* Card Header */
+    .ui-card .card-header {
+        font-size: 1.15em;
+        font-weight: 600;
+        color: #d15822;
+        margin: 32px 0 0 0;
+        text-align: center;
+        padding: 0 18px;
+        flex: 0 0 auto;
+    }
+
+    /* Optional: Add a card icon or image at the top if desired */
+    .ui-card .card-icon {
+        margin-top: 28px;
+        font-size: 2.5em;
+        color: #ffd700;
     }
 
     .card-header {
@@ -53,6 +85,58 @@
         min-height: 80px;
         font-size: 1.08em;
         color: #4a5568;
+    }
+
+    .card-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .card-viewer-modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0; top: 0; width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.45);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-viewer-modal.active {
+        display: flex;
+    }
+
+    .card-viewer-content {
+        background: #fffaf4;
+        border: 2.5px solid #d15822;
+        border-radius: 18px;
+        padding: 32px 28px;
+        max-width: 400px;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.13);
+        font-family: 'Dancing Script', cursive, 'Segoe UI', Arial, sans-serif;
+        font-size: 1.15em;
+        color: #a11d20;
+        text-align: left;
+        position: relative;
+        min-width: 260px;
+    }
+
+    .close-card-viewer {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        background: none;
+        border: none;
+        font-size: 1.3em;
+        color: #d15822;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .close-card-viewer:hover {
+        color: #a11d20;
     }
 
     .card-pagination {
@@ -102,4 +186,19 @@
         background: #d15822;
         color: #fff;
         border-color: #d15822;
+    }
+
+    @media (max-width: 700px) {
+        .card-list {
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
+        .ui-card {
+            width: 95vw;
+            min-width: 0;
+            max-width: 340px;
+            min-height: 180px;
+            box-sizing: border-box;
+        }
     }

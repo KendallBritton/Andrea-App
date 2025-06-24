@@ -1,16 +1,22 @@
 // Card pagination logic
-document.querySelectorAll('.ui-card').forEach(card => {
-    const pages = JSON.parse(card.getAttribute('data-pages'));
-    let currentPage = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.ui-card');
+    const modal = document.getElementById('cardViewerModal');
+    const closeBtn = document.getElementById('closeCardViewerBtn');
+    const header = document.getElementById('viewerCardHeader');
+    const content = document.getElementById('viewerCardContent');
+    const pagination = document.getElementById('viewerCardPagination');
 
-    const contentDiv = card.querySelector('.card-content');
-    const paginationDiv = card.querySelector('.card-pagination');
+    let currentPages = [];
+    let currentPage = 0;
+    let currentTitle = "";
 
     function renderPage() {
-        contentDiv.textContent = pages[currentPage];
-        paginationDiv.innerHTML = '';
-        if (pages.length > 1) {
-            for (let i = 0; i < pages.length; i++) {
+        content.innerHTML = `<img src="${currentPages[currentPage]}" alt="Card Page Image" style="max-width:100%;max-height:60vh;display:block;margin:0 auto;border-radius:12px;">`;
+        header.textContent = currentTitle;
+        pagination.innerHTML = '';
+        if (currentPages.length > 1) {
+            for (let i = 0; i < currentPages.length; i++) {
                 const btn = document.createElement('button');
                 btn.textContent = i + 1;
                 if (i === currentPage) btn.classList.add('active');
@@ -18,9 +24,28 @@ document.querySelectorAll('.ui-card').forEach(card => {
                     currentPage = i;
                     renderPage();
                 });
-                paginationDiv.appendChild(btn);
+                pagination.appendChild(btn);
             }
         }
     }
-    renderPage();
+
+    cards.forEach(card => {
+        card.addEventListener('click', function () {
+            currentPages = JSON.parse(this.getAttribute('data-pages'));
+            currentPage = 0;
+            currentTitle = this.querySelector('.card-header').textContent;
+            modal.style.display = 'flex';
+            renderPage();
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
