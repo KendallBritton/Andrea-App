@@ -52,17 +52,17 @@
         border-color: #d15822;
     }
 
-.highlight-photo {
-    width: 100%;
-    max-width: 480px;
-    height: 340px;
-    object-fit: contain; /* changed from cover to contain */
-    background: #e0e7ef;
-    border-radius: 16px;
-    display: block;
-    margin: 0 auto 18px auto;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-}
+    .highlight-photo {
+        width: 100%;
+        max-width: 480px;
+        height: 340px;
+        object-fit: contain; /* changed from cover to contain */
+        background: #e0e7ef;
+        border-radius: 16px;
+        display: block;
+        margin: 0 auto 18px auto;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    }
 
     .photo-grid {
         display: grid;
@@ -71,16 +71,16 @@
         margin-top: 18px;
     }
 
-.gallery-thumb {
-    width: 100%;
-    height: 340px;
-    object-fit: contain; /* changed from cover to contain */
-    background: #e0e7ef;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: box-shadow 0.2s, transform 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
+    .gallery-thumb {
+        width: 100%;
+        height: 340px;
+        object-fit: contain; /* changed from cover to contain */
+        background: #e0e7ef;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: box-shadow 0.2s, transform 0.2s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
 
     .gallery-thumb.selected,
     .gallery-thumb:hover {
@@ -89,20 +89,53 @@
         border: 2px solid #d15822;
     }
 
-.photo-grid img {
-    width: 100%;
-    height: 80px;
-    object-fit: contain; /* changed from cover to contain */
-    background: #e0e7ef;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.2s;
-}
+    .photo-grid img {
+        width: 100%;
+        height: 80px;
+        object-fit: contain; /* changed from cover to contain */
+        background: #e0e7ef;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.2s;
+    }
     
     .photo-grid img.selected {
         border: 2px solid #d15822;
     }
+
+    #highlight-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 0 auto 18px auto;
+}
+
+.highlight-nav-btn {
+    background: #fff;
+    color: #d15822;
+    border: 1.5px solid #d15822;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.15s;
+    margin: 0 8px;
+}
+
+.highlight-nav-btn:hover,
+.highlight-nav-btn:focus {
+    background: #d15822;
+    color: #fff;
+    border-color: #d15822;
+    transform: scale(1.08);
+}
 
     .back-btn {
         position: absolute;
