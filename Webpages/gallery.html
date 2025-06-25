@@ -10,23 +10,24 @@
     </style>
 </head>
 <body>
-    <div class="gallery-container">
+<div class="gallery-container">
 
-        <a href="../index.html" class="back-btn" title="Back to Main Page">&#8592; Back</a>
+    <a href="../index.html" class="back-btn" title="Back to Main Page">&#8592; Back</a>
 
-        <div class="gallery-title">Photo Gallery</div>
-        <div class="year-buttons">
-            <button class="year-btn" data-year="2020">2020</button>
-            <button class="year-btn" data-year="2021">2021</button>
-            <button class="year-btn" data-year="2022">2022</button>
-            <button class="year-btn" data-year="2023">2023</button>
-            <button class="year-btn" data-year="2024">2024</button>
-        </div>
-        <div id="yearGallerySection" style="display:none;">
-            <img id="highlight-photo" class="highlight-photo" src="" alt="Highlighted Photo">
-            <div class="photo-grid" id="photoGrid"></div>
-        </div>
+    <div class="gallery-title">Photo Gallery</div>
+    <div class="year-buttons">
+        <button class="year-btn" data-year="2020">2020</button>
+        <button class="year-btn" data-year="2021">2021</button>
+        <button class="year-btn" data-year="2022">2022</button>
+        <button class="year-btn" data-year="2023">2023</button>
+        <button class="year-btn" data-year="2024">2024</button>
     </div>
+    <div id="yearGallerySection" style="display:none;">
+        <img id="highlight-photo" class="highlight-photo" src="" alt="Highlighted Photo">
+        <button id="viewGalleryBtn" style="margin:18px auto 0 auto;display:block;">View Entire Gallery</button>
+        <div class="photo-grid" id="photoGrid" style="display:none;"></div>
+    </div>
+</div>
     <script src="../JavaScript/gallery.js"></script>
 </body>
 </html>
