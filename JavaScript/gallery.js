@@ -301,19 +301,103 @@ const photosByYear = {
     ]
 };
 
+let currentYear = null;
+let currentPhotoIndex = 0;
+
 const yearBtns = document.querySelectorAll('.year-btn');
 const yearGallerySection = document.getElementById('yearGallerySection');
 const photoGrid = document.getElementById('photoGrid');
 const highlightPhoto = document.getElementById('highlight-photo');
+const leftBtn = document.getElementById('highlight-left');
+const rightBtn = document.getElementById('highlight-right');
 
-let currentYear = null;
+// Helper to update the highlighted photo and selected thumbnail
+function setHighlightPhoto(year, index) {
+    const photos = photosByYear[year] || [];
+    if (!photos.length) return;
+    currentPhotoIndex = (index + photos.length) % photos.length;
+    highlightPhoto.src = photos[currentPhotoIndex];
 
+    // Update selected class in grid if visible
+    if (photoGrid && photoGrid.children.length) {
+        Array.from(photoGrid.children).forEach((img, idx) => {
+            img.classList.toggle('selected', idx === currentPhotoIndex);
+        });
+    }
+}
+
+// Button navigation
+leftBtn.onclick = () => {
+    if (!currentYear) return;
+    const photos = photosByYear[currentYear] || [];
+    if (photos.length) {
+        setHighlightPhoto(currentYear, currentPhotoIndex - 1);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+};
+rightBtn.onclick = () => {
+    if (!currentYear) return;
+    const photos = photosByYear[currentYear] || [];
+    if (photos.length) {
+        setHighlightPhoto(currentYear, currentPhotoIndex + 1);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+};
+
+// Touch swipe support for highlight photo
+let touchStartX = null;
+highlightPhoto.addEventListener('touchstart', function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+});
+highlightPhoto.addEventListener('touchend', function (e) {
+    if (touchStartX === null) return;
+    let touchEndX = e.changedTouches[0].screenX;
+    let diff = touchEndX - touchStartX;
+    if (Math.abs(diff) > 50) {
+        const photos = photosByYear[currentYear] || [];
+        if (diff > 0) {
+            // Swipe right (previous)
+            setHighlightPhoto(currentYear, currentPhotoIndex - 1);
+        } else {
+            // Swipe left (next)
+            setHighlightPhoto(currentYear, currentPhotoIndex + 1);
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    touchStartX = null;
+});
+
+// Update year button logic to use setHighlightPhoto
 yearBtns.forEach(btn => {
     btn.addEventListener('click', function () {
         yearBtns.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
         currentYear = this.getAttribute('data-year');
-        openYearGallery(currentYear);
+        const photos = photosByYear[currentYear] || [];
+        currentPhotoIndex = 0;
+
+        // Set highlight photo to first photo or blank
+        setHighlightPhoto(currentYear, 0);
+        highlightPhoto.style.display = photos.length ? 'block' : 'none';
+
+        // Hide grid and show button
+        photoGrid.style.display = 'none';
+        document.getElementById('viewGalleryBtn').style.display = photos.length > 1 ? 'block' : 'none';
+
+        // Prepare grid but don't show yet
+        photoGrid.innerHTML = '';
+        photos.forEach((src, idx) => {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = `Photo ${idx + 1} of ${currentYear}`;
+            img.className = 'gallery-thumb';
+            if (idx === 0) img.classList.add('selected');
+            img.addEventListener('click', () => {
+                setHighlightPhoto(currentYear, idx);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            photoGrid.appendChild(img);
+        });
     });
 });
 
