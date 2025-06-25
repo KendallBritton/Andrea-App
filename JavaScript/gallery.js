@@ -1,28 +1,34 @@
 // Example photo data by year (replace with your actual images)
 const photosByYear = {
+    "2020": [
+        "../Images/Gallery-Images/2020-Images/photo1.jpg",
+        "../Images/Gallery-Images/2020-Images/photo1.jpg",
+        "../Images/Gallery-Images/2020-Images/photo1.jpg",
+        "../Images/Gallery-Images/2020-Images/photo1.jpg"
+    ],
     "2021": [
-        "../Images/Gallery/2021/photo1.jpg",
-        "../Images/Gallery/2021/photo2.jpg",
-        "../Images/Gallery/2021/photo3.jpg",
-        "../Images/Gallery/2021/photo4.jpg"
+        "../Images/Gallery-Images/2021-Images/photo1.jpg",
+        "../Images/Gallery-Images/2021-Images/photo1.jpg",
+        "../Images/Gallery-Images/2021-Images/photo1.jpg",
+        "../Images/Gallery-Images/2021-Images/photo1.jpg"
     ],
     "2022": [
-        "../Images/Gallery/2022/photo1.jpg",
-        "../Images/Gallery/2022/photo2.jpg",
-        "../Images/Gallery/2022/photo3.jpg",
-        "../Images/Gallery/2022/photo4.jpg"
+        "../Images/Gallery-Images/2022-Images/photo1.jpg",
+        "../Images/Gallery-Images/2022-Images/photo1.jpg",
+        "../Images/Gallery-Images/2022-Images/photo1.jpg",
+        "../Images/Gallery-Images/2022-Images/photo1.jpg"
     ],
     "2023": [
-        "../Images/Gallery/2023/photo1.jpg",
-        "../Images/Gallery/2023/photo2.jpg",
-        "../Images/Gallery/2023/photo3.jpg",
-        "../Images/Gallery/2023/photo4.jpg"
+        "../Images/Gallery-Images/2023-Images/photo1.jpg",
+        "../Images/Gallery-Images/2023-Images/photo1.jpg",
+        "../Images/Gallery-Images/2023-Images/photo1.jpg",
+        "../Images/Gallery-Images/2023-Images/photo1.jpg"
     ],
     "2024": [
-        "../Images/Gallery/2024/photo1.jpg",
-        "../Images/Gallery/2024/photo2.jpg",
-        "../Images/Gallery/2024/photo3.jpg",
-        "../Images/Gallery/2024/photo4.jpg"
+        "../Images/Gallery-Images/2024-Images/photo1.jpg",
+        "../Images/Gallery-Images/2024-Images/photo1.jpg",
+        "../Images/Gallery-Images/2024-Images/photo1.jpg",
+        "../Images/Gallery-Images/2024-Images/photo1.jpg"
     ]
 };
 
