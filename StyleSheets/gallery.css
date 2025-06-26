@@ -159,3 +159,27 @@
         color: #fff;
         border-color: #d15822;
     }
+
+    .view-gallery-btn {
+        background: #fff;
+        color: #d15822;
+        border: 2px solid #d15822;
+        border-radius: 24px;
+        padding: 12px 32px;
+        font-size: 1.13em;
+        font-weight: bold;
+        margin: 18px auto 0 auto;
+        display: block;
+        cursor: pointer;
+        box-shadow: 0 2px 12px rgba(209,88,34,0.07);
+        transition: background 0.2s, color 0.2s, border 0.2s, transform 0.13s;
+        letter-spacing: 0.03em;
+    }
+
+    .view-gallery-btn:hover,
+    .view-gallery-btn:focus {
+        background: #d15822;
+        color: #fff;
+        border-color: #d15822;
+        transform: scale(1.04);
+    }

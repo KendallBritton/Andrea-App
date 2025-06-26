@@ -367,6 +367,16 @@ highlightPhoto.addEventListener('touchend', function (e) {
     touchStartX = null;
 });
 
+// Preload only the first photo for each year on page load
+window.addEventListener('DOMContentLoaded', function () {
+    Object.values(photosByYear).forEach(photoArr => {
+        if (photoArr.length > 0) {
+            const img = new Image();
+            img.src = photoArr[0];
+        }
+    });
+});
+
 // Update year button logic to use setHighlightPhoto
 yearBtns.forEach(btn => {
     btn.addEventListener('click', function () {
