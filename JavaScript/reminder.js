@@ -48,6 +48,9 @@ const pages = [
         just tell me, and i will be there,
         next to you."
 
+        There was an additional comment that stated "we don't fall in love with the people who promise everything... We fall 
+        for the ones who stay especially when we fall apart."
+
     </p>`,
     `<p>
         I love the way you listen and truly care about what I have to say.<br>
