@@ -21,6 +21,18 @@ const pages = [
         by your presence.
 
         I love you for your gentle heart, for your way of thinking, for your strength and resiliency, and for your acceptance of others.<br>
+        I love you because you embrace yourself in every aspect that you are and are so generous to share that with the world around you.
+        I love you because you complete me, yet also push me in ways to grow that I've been previously unaware of. 
+
+        I could go on and on and list all the things that make you a true sensation, but what's the rush when we have a lifetime together that
+        I can express all the ways that I appreciate, love, cherish, and value everything that you are on a daily basis!
+
+        I want to thank you for choosing me all those years ago and saving me to experience a life with love that I never thought was possible for me. The love that you offer
+        is so rich and pure, and I can't take you enough for loving me in the way that you do, regardless of how hard I make it sometimes.
+
+        The love that we share is something that everyone has the chance to find and experience at some point in their lifetime because there is simply no better feeling than
+        being able to share, walk, and build this life together as the strongest team that we are.
+
 
     </p>`,
     `<p>
