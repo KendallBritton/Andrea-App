@@ -81,10 +81,10 @@ const pages = [
         Thank you for being the person I love most in this world, and for being the person I will spend the rest of my life with.
     </p>
     <p class="note-page">
-        Most importantly, thank you for your existence!
+        Most importantly, thank you for your existence and your story!
     </p>
     <p class="note-page">
-        I am so much of the person who I am today, which a lot of that credit is attributed directly to your contribution to our life.
+        I am so much of the person who I am today due to all of your direct and indirect contributions to our life.
     </p>
         <p class="note-page">
         Seriously, I thank you for your love, friendship, partnership, existence, and everything else that is a direct reflection of Andrea.
@@ -123,6 +123,29 @@ function renderPage() {
         }
     }
 }
+
+// --- Swipe navigation for note modal ---
+let touchStartX = null;
+noteModal.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+    }
+});
+noteModal.addEventListener('touchend', function(e) {
+    if (touchStartX === null) return;
+    let touchEndX = e.changedTouches[0].clientX;
+    let diff = touchEndX - touchStartX;
+    if (Math.abs(diff) > 50) {
+        if (diff < 0 && currentPage < pages.length - 1) {
+            currentPage++;
+            renderPage();
+        } else if (diff > 0 && currentPage > 0) {
+            currentPage--;
+            renderPage();
+        }
+    }
+    touchStartX = null;
+});
 
 openLetter.addEventListener('click', () => {
     noteModal.classList.add('open');
