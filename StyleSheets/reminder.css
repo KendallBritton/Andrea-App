@@ -111,31 +111,39 @@
         color: #a11d20;
     }
 
-    /* Add to your style block or reminder.css */
     .note-pagination {
         display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
         justify-content: center;
-        gap: 10px;
-        margin-top: 18px;
+        margin-top: 1.5em;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .note-pagination button {
-        background: #fff;
+        min-width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+        background: #f8f4f0;
         color: #d15822;
-        border: 1.5px solid #d15822;
-        border-radius: 8px;
-        padding: 5px 14px;
-        font-size: 1em;
-        font-weight: 500;
+        font-weight: bold;
+        font-size: 1.1em;
         cursor: pointer;
-        transition: background 0.2s, color 0.2s, border 0.2s;
+        margin-bottom: 8px;
+        transition: background 0.2s, color 0.2s;
     }
 
     .note-pagination button.active,
-    .note-pagination button:hover {
+    .note-pagination button:focus {
         background: #d15822;
         color: #fff;
-        border-color: #d15822;
+    }
+
+    .note-pagination button:nth-child(5n+1) {
+        clear: left;
     }
 
     .back-btn {
@@ -201,6 +209,22 @@
         color: #fff;
         border-color: #d15822;
     }
+
+.note-page {
+    margin-bottom: 1.5em;
+    line-height: 1.7;
+    font-size: 1.13em;
+    letter-spacing: 0.01em;
+}
+.note-quote {
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    background: #f8f4f0;
+    border-left: 4px solid #d15822;
+    font-style: italic;
+    font-size: 1.08em;
+    line-height: 1.7;
+}
 
     @media (max-width: 500px) {
         .love-letter-container { max-width: 98vw; }
