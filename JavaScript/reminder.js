@@ -6,17 +6,22 @@ const notePagination = document.getElementById('notePagination');
 
 // Define your pages here
 const pages = [
-    `<p>My Dearest,</p>
+    `<p>My Andrea,</p>
     <p>
-        I just wanted to remind you of how much you mean to me.<br><br>
-        You always know how to make me smile, even on the toughest days.<br><br>
-        Your kindness and compassion inspire me to be a better person every day.
-        I love the way you listen and truly care about what I have to say.<br><br>
-        Your laughter is contagious and fills our home with joy.<br><br>
-        Thank you for being my partner, my best friend, and my greatest support.
-        <br><br>
-        I love you more than words can say.<br>
-        Forever yours,<br>❤️
+        Everyday I wake up, look into your eyes, and ask myself, "How did I get so lucky?"<br>
+        And I mean truly, how did I get so lucky to have you in my life?<br>
+        
+        From the moment I met you, I instantly fell in love with your smile, your passion, and your spirit.<br>
+        Being fortunate enought to be your partner and dating you through all these years, I've had countless additional reasons to fall 
+        deeper and deeper in love with you that range from your profound intention of care, support, and love for others, to your dedication of growth
+        within yourself and every relationship around you.
+
+        Andrea, I believe you are the human embodiment of a shining star in the night sky. Every time I look at you, I see
+        a pure entity of energy that gleams with warmth and light, and it extends to every corner of this earth that is graced
+        by your presence.
+
+        I love you for your gentle heart, for your way of thinking, for your strength and resiliency, and for your acceptance of others.<br>
+
     </p>`,
     `<p>
         I love the way you listen and truly care about what I have to say.<br>
