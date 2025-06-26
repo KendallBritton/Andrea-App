@@ -27,12 +27,26 @@ const pages = [
         I could go on and on and list all the things that make you a true sensation, but what's the rush when we have a lifetime together that
         I can express all the ways that I appreciate, love, cherish, and value everything that you are on a daily basis!
 
-        I want to thank you for choosing me all those years ago and saving me to experience a life with love that I never thought was possible for me. The love that you offer
+        I want to thank you for choosing me all those years ago and saving me to experience a life with love that I never thought was possible for myself. The love that you offer
         is so rich and pure, and I can't take you enough for loving me in the way that you do, regardless of how hard I make it sometimes.
 
-        The love that we share is something that everyone has the chance to find and experience at some point in their lifetime because there is simply no better feeling than
+        The love that we share is something that I wish everyone has the chance to find and experience at some point in their lifetime because there is simply no better feeling than
         being able to share, walk, and build this life together as the strongest team that we are.
 
+        I read quote recently and it made me think of us. It goes:
+        
+        "my love for you isn't something that I can lose.
+        it's part of me, given freely to you.
+        no conditions, no expectations.
+        just a promise: I will be there next to you.
+
+        if you need to stay up all night crying,
+        i will be there next to you,
+        and if tomorrow you have a bad day,
+        i will be there for you.
+
+        just tell me, and i will be there,
+        next to you."
 
     </p>`,
     `<p>
