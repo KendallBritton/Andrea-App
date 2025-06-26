@@ -125,3 +125,15 @@
         border-color: #a11d20;
         transform: scale(1.08);
     }
+
+    .video-section iframe,
+    .video-section video,
+    div[style*="justify-content: center;"][style*="margin: 24px 0;"] iframe,
+    div[style*="justify-content: center;"][style*="margin: 24px 0 ;"] iframe {
+        border: 2x solid #a11d20;
+        border-radius: 18px;
+        box-shadow: 0 4px 24px rgba(209,88,34,0.10), 0 0 0 8px #83738d;
+        background: #fffaf3;
+        transition: box-shadow 0.3s, border-color 0.3s;
+        position: relative;
+    }
