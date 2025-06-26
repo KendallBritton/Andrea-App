@@ -72,7 +72,9 @@ const pages = [
 
         Let's blossom together, grow together, and continue to build a life that is full of love, laughter, and adventure.
 
-        *Now stop reading this, so I can give you the biggest hug and kiss!*
+        I love you endlessly, the soon to be Mrs. Andrea Britton!!
+
+        *Now stop reading this so I can give you the biggest hug and kiss!*
 
         Forever yours,<br>
         Kenny ❤️
