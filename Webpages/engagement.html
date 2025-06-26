@@ -111,73 +111,14 @@
             I love you forever and always! Enjoy some of the photos from our special day below!
         </div>
 
-                <!-- Gallery Highlight Section -->
+        <!-- Gallery Highlight Section -->
         <div id="gallery-highlight-section">
             <img id="highlight-photo" class="highlight-photo" src="../Images/Engagement-Images/IMG_3809_VSCO 2.jpeg" alt="Highlighted Engagement Photo">
-            <div class="gallery-grid">
-                <img src="../Images/Engagement-Images/IMG_3809_VSCO 2.jpeg" alt="Engagement Photo 1" class="selected">
-                <img src="../Images/Engagement-Images/IMG_7540.jpeg" alt="Engagement Photo 2">
-                <img src="../Images/Engagement-Images/IMG_4134.jpeg" alt="Engagement Photo 3">
-                <img src="../Images/Engagement-Images/IMG_3848_VSCO.jpeg" alt="Engagement Photo 4">
+            <div id="highlight-nav-container" style="display: flex; justify-content: center; gap: 32px; margin: 18px 0;">
+                <button id="highlight-left" class="highlight-nav-btn" aria-label="Previous Photo">&#8592;</button>
+                <button id="highlight-right" class="highlight-nav-btn" aria-label="Next Photo">&#8594;</button>
             </div>
-            <button class="view-gallery-btn" id="viewGalleryBtn">View Entire Gallery</button>
-        </div>
-
-        <!-- Modal for Full Gallery -->
-        <div class="modal" id="galleryModal">
-            <div class="modal-content">
-                <div class="modal-gallery-grid">
-                    <img src="../Images/Engagement-Images/IMG_3809_VSCO 2.jpeg" alt="Engagement Photo 1">
-                    <img src="../Images/Engagement-Images/IMG_7540.jpeg" alt="Engagement Photo 2">
-                    <img src="../Images/Engagement-Images/IMG_4134.jpeg" alt="Engagement Photo 3">
-                    <img src="../Images/Engagement-Images/IMG_3848_VSCO.jpeg" alt="Engagement Photo 4">
-
-                    <img src="../Images/Engagement-Images/IMG_1135.jpeg" alt="Engagement Photo 5">
-                    <img src="../Images/Engagement-Images/IMG_3317.jpeg" alt="Engagement Photo 6">
-                    <img src="../Images/Engagement-Images/IMG_3689.jpeg" alt="Engagement Photo 7">
-                    <img src="../Images/Engagement-Images/IMG_3696.jpeg" alt="Engagement Photo 8">
-                    <img src="../Images/Engagement-Images/IMG_3699.jpeg" alt="Engagement Photo 9">
-                    <img src="../Images/Engagement-Images/IMG_3747_VSCO.jpeg" alt="Engagement Photo 10">
-                    <img src="../Images/Engagement-Images/IMG_3748.jpeg" alt="Engagement Photo 11">
-                    <img src="../Images/Engagement-Images/IMG_3768.jpeg" alt="Engagement Photo 12">
-                    <img src="../Images/Engagement-Images/IMG_3770.jpeg" alt="Engagement Photo 13">
-                    <img src="../Images/Engagement-Images/IMG_3792.jpeg" alt="Engagement Photo 14">
-                    <img src="../Images/Engagement-Images/IMG_3809_VSCO.jpeg" alt="Engagement Photo 15">
-                    <img src="../Images/Engagement-Images/IMG_3809.jpeg" alt="Engagement Photo 16">
-                    <img src="../Images/Engagement-Images/IMG_3823.jpeg" alt="Engagement Photo 17">
-                    <img src="../Images/Engagement-Images/IMG_3856.jpeg" alt="Engagement Photo 18">
-                    <img src="../Images/Engagement-Images/IMG_3860.jpeg" alt="Engagement Photo 19">
-                    <img src="../Images/Engagement-Images/IMG_3867.jpeg" alt="Engagement Photo 20">
-                    <img src="../Images/Engagement-Images/IMG_3871.jpeg" alt="Engagement Photo 21">
-                    <img src="../Images/Engagement-Images/IMG_3875.jpeg" alt="Engagement Photo 22">
-                    <img src="../Images/Engagement-Images/IMG_3877.jpeg" alt="Engagement Photo 23">
-                    <img src="../Images/Engagement-Images/IMG_3878_VSCO.jpeg" alt="Engagement Photo 24">
-                    <img src="../Images/Engagement-Images/IMG_3878.jpeg" alt="Engagement Photo 25">
-                    <img src="../Images/Engagement-Images/IMG_3912.jpeg" alt="Engagement Photo 26">
-                    <img src="../Images/Engagement-Images/IMG_3920.jpeg" alt="Engagement Photo 27">
-                    <img src="../Images/Engagement-Images/IMG_3924.jpeg" alt="Engagement Photo 28">
-                    <img src="../Images/Engagement-Images/IMG_3925_VSCO.jpeg" alt="Engagement Photo 29">
-                    <img src="../Images/Engagement-Images/IMG_3926.jpeg" alt="Engagement Photo 30">
-                    <img src="../Images/Engagement-Images/IMG_3931.jpeg" alt="Engagement Photo 31">
-                    <img src="../Images/Engagement-Images/IMG_3948.jpeg" alt="Engagement Photo 32">
-                    <img src="../Images/Engagement-Images/IMG_3977_VSCO.jpeg" alt="Engagement Photo 33">
-                    <img src="../Images/Engagement-Images/IMG_3977.jpeg" alt="Engagement Photo 34">
-                    <img src="../Images/Engagement-Images/IMG_4015.jpeg" alt="Engagement Photo 35">
-                    <img src="../Images/Engagement-Images/IMG_4071.jpeg" alt="Engagement Photo 36">
-                    <img src="../Images/Engagement-Images/IMG_4073.jpeg" alt="Engagement Photo 37">
-                    <img src="../Images/Engagement-Images/IMG_4080.jpeg" alt="Engagement Photo 38">
-                    <img src="../Images/Engagement-Images/IMG_4082.jpeg" alt="Engagement Photo 39">
-                    <img src="../Images/Engagement-Images/IMG_4089.jpeg" alt="Engagement Photo 40">
-                    <img src="../Images/Engagement-Images/IMG_4098.jpeg" alt="Engagement Photo 41">
-                    <img src="../Images/Engagement-Images/IMG_4100.jpeg" alt="Engagement Photo 42">
-                    <img src="../Images/Engagement-Images/IMG_4132.jpeg" alt="Engagement Photo 43">
-                    <img src="../Images/Engagement-Images/IMG_4137.jpeg" alt="Engagement Photo 44">
-                    <img src="../Images/Engagement-Images/IMG_6159.jpeg" alt="Engagement Photo 45">
-                    <img src="../Images/Engagement-Images/IMG_6250.jpeg" alt="Engagement Photo 46">
-                    <!-- Add more images as needed -->
-                </div>
-                <button class="close-modal-btn" id="closeModalBtn">Close Gallery</button>
-            </div>
+            <div class="gallery-grid" id="galleryGrid" style="display: none;"></div>
         </div>
 
     </div>
