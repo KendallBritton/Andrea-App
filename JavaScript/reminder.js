@@ -12,7 +12,7 @@ const pages = [
         And I mean truly, how did I get so lucky to have you in my life?<br>
         
         From the moment I met you, I instantly fell in love with your smile, your passion, and your spirit.<br>
-        Being fortunate enought to be your partner and dating you through all these years, I've had countless additional reasons to fall 
+        Being fortunate enough to be your partner and dating you throughout all these years, I've had countless additional reasons to fall 
         deeper and deeper in love with you that range from your profound intention of care, support, and love for others, to your dedication of growth
         within yourself and every relationship around you.
 
@@ -28,12 +28,12 @@ const pages = [
         I can express all the ways that I appreciate, love, cherish, and value everything that you are on a daily basis!
 
         I want to thank you for choosing me all those years ago and saving me to experience a life with love that I never thought was possible for myself. The love that you offer
-        is so rich and pure, and I can't take you enough for loving me in the way that you do, regardless of how hard I make it sometimes.
+        is so rich and pure, and I can't thank you enough for loving me in the way that you do, regardless of how hard I make it sometimes.
 
         The love that we share is something that I wish everyone has the chance to find and experience at some point in their lifetime because there is simply no better feeling than
         being able to share, walk, and build this life together as the strongest team that we are.
 
-        I read quote recently and it made me think of us. It goes:
+        I read a quote recently and it made me think of us. It goes:
         
         "my love for you isn't something that I can lose.
         it's part of me, given freely to you.
@@ -48,8 +48,35 @@ const pages = [
         just tell me, and i will be there,
         next to you."
 
-        There was an additional comment that stated "we don't fall in love with the people who promise everything... We fall 
+        There was an additional comment that stated "we don't fall in love with the people who promise everything... we fall 
         for the ones who stay especially when we fall apart."
+
+        I referenced this because I want you to know that I will always be there for you, no matter what life throws our way.
+        I recognize that it's not on you to always voice out your needs, and that I need to be more proactive in reading the signs, trusting my instincy by which you taught me 
+        and being there for you when you need me the most, in both the good and bad times. 
+
+        At the end of the day, it's nobody but you and me, we built this life together, and we will continue to fortify our future, foundation, love, and relationship
+        so that it blossoms into something that is everlasting and perfect for us.
+
+        Being Andrea Elizabeth Moore's partner and lover is the greatest milestone of my lifetime, and I am so grateful, lucky, and honored to be walking this journey with you!
+        Thank you for being so patient with me, forgiving me when I make mistakes, and holding me accountable when I need it most although it may not always be easy to do so, and
+        somehow still managing to love me through it all.
+
+        Thank you for being the person I love most in this world, and for being the person I will spend the rest of my life with.
+
+        Most importantly, thank you for your existence!
+
+        I am so much of the person who I am today, which a lot of that credit is attributed directly to your contribution to our life. 
+
+        Seriously, I thank you for your love, friendship, partnership, existence, and everything else that is a direct relflection of Andrea.
+
+        Let's blossom together, grow together, and continue to build a life that is full of love, laughter, and adventure.
+
+        *Now stop reading this, so I can give you the biggest hug and kiss!*
+
+        Forever yours,<br>
+        Kenny ❤️
+
 
     </p>`,
     `<p>
