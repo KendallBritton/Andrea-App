@@ -10,7 +10,7 @@ const pages = [
         My Andrea,
     </p>
     <p class="note-page">
-        Everyday I wake up, look into your eyes, and ask myself, <strong>"How did I get so lucky?"</strong><br>
+        Every day I wake up, look into your eyes, and ask myself, <strong>"How did I get so lucky?"</strong><br>
         And I mean truly, how did I get so lucky to have you in my life?
     </p>
     <p class="note-page">
