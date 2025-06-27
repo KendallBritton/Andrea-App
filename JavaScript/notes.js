@@ -49,3 +49,32 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.querySelectorAll('.card-section').forEach(section => {
+    // Create toggle button if not present
+    let toggle = section.querySelector('.card-section-toggle');
+    if (!toggle) {
+        toggle = document.createElement('button');
+        toggle.className = 'card-section-toggle';
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerText = '+';
+        section.insertBefore(toggle, section.firstChild);
+    } else {
+        // Ensure all toggles start collapsed
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerText = '+';
+    }
+    const cardList = section.querySelector('.card-list');
+    const title = section.querySelector('.card-section-title');
+    // Start collapsed
+    cardList.style.display = 'none';
+    toggle.onclick = function() {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        cardList.style.display = expanded ? 'none' : '';
+        toggle.innerText = expanded ? '+' : '−';
+    };
+    // Make title clickable too
+    title.style.cursor = 'pointer';
+    title.onclick = () => toggle.click();
+});

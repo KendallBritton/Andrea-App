@@ -30,6 +30,7 @@
         flex-wrap: wrap;
         gap: 28px;
         align-items: flex-start;
+        margin-top: 10px;
         margin-bottom: 32px;
     }
 
@@ -183,6 +184,62 @@
     }
 
     .back-btn:hover, .back-btn:focus {
+        background: #d15822;
+        color: #fff;
+        border-color: #d15822;
+    }
+
+    .card-section {
+        text-align: center;
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+    .card-section-toggle {
+        position: absolute;
+        left: -36px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff7f0;
+        color: #d15822;
+        border: 2px solid #d15822;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        font-size: 1.3em;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(209,88,34,0.07);
+        transition: background 0.2s, color 0.2s, border 0.2s;
+        z-index: 2;
+        outline: none;
+    }
+
+    .card-section-toggle[aria-expanded="false"] {
+        background: #ffe6d6;
+        color: #a13e0f;
+    }
+
+    .card-section-title {
+        display: inline-block;
+        margin-left: 8px;
+        cursor: pointer;
+        user-select: none;
+        background: #fff;
+        color: #d15822;
+        border: 1.5px solid #d15822;
+        border-radius: 8px;
+        padding: 7px 16px;
+        font-size: 1em;
+        text-decoration: none;
+        font-weight: 500;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: background 0.2s, color 0.2s, border 0.2s;
+        z-index: 10;
+    }
+
+    .card-section-title:hover,
+    .card-section-title:focus {
         background: #d15822;
         color: #fff;
         border-color: #d15822;
