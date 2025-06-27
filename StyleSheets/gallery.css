@@ -1,7 +1,7 @@
     body {
         margin: 0;
         font-family: 'Segoe UI', Arial, sans-serif;
-        background: #f6f7fb;
+        background: #d2d1f1;
         color: #2d3748;
     }
 
@@ -9,7 +9,7 @@
         max-width: 1000px;
         margin: 40px auto;
         padding: 24px;
-        background: rgba(255,255,255,0.95);
+        background: rgba(34, 30, 30, 0.35);
         border-radius: 18px;
         box-shadow: 0 4px 32px rgba(0,0,0,0.07);
         position: relative;
@@ -18,10 +18,11 @@
     .gallery-title {
         text-align: center;
         font-size: 2.2em;
-        color: #d15822;
+        color: #a11d20;
         margin-top: 48px;
         margin-bottom: 32px;
         letter-spacing: 1px;
+        font-family: 'Pacifico', 'Segoe UI', Arial, cursive, sans-serif;
     }
 
     .year-buttons {
@@ -33,23 +34,24 @@
     }
 
     .year-btn {
-        background: #fff;
-        color: #d15822;
-        border: 1.5px solid #d15822;
+        background: rgba(243, 236, 236, 0.95);
+        color: #a11d20;
+        border: 1.5px solid #a11d20;
         border-radius: 8px;
         padding: 8px 22px;
         font-size: 1em;
         font-weight: 500;
         cursor: pointer;
         transition: background 0.2s, color 0.2s, border 0.2s;
+        font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
     }
 
     .year-btn.active,
     .year-btn:hover,
     .year-btn:focus {
-        background: #d15822;
+        background: #a11d20;
         color: #fff;
-        border-color: #d15822;
+        border-color: #a11d20;
     }
 
     .highlight-photo {
@@ -61,7 +63,8 @@
         border-radius: 16px;
         display: block;
         margin: 0 auto 18px auto;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        border: 2x solid #a11d20;
+        box-shadow: 0 4px 24px rgba(209,88,34,0.10), 0 0 0 8px #83738d;
     }
 
     .photo-grid {
@@ -101,49 +104,49 @@
     }
     
     .photo-grid img.selected {
-        border: 2px solid #d15822;
+        border: 2px solid #a11d20;
     }
 
     #highlight-nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin: 0 auto 18px auto;
-}
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        margin: 0 auto 18px auto;
+    }
 
-.highlight-nav-btn {
-    background: #fff;
-    color: #d15822;
-    border: 1.5px solid #d15822;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    font-size: 1.6em;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s, color 0.2s, border 0.2s, transform 0.15s;
-    margin: 0 8px;
-}
+    .highlight-nav-btn {
+        background: rgba(243, 236, 236, 0.95);
+        color: #a11d20;
+        border: 1.5px solid #a11d20;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        font-size: 1.6em;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s, color 0.2s, border 0.2s, transform 0.15s;
+        margin: 0 8px;
+    }
 
-.highlight-nav-btn:hover,
-.highlight-nav-btn:focus {
-    background: #d15822;
-    color: #fff;
-    border-color: #d15822;
-    transform: scale(1.08);
-}
+    .highlight-nav-btn:hover,
+    .highlight-nav-btn:focus {
+        background: #a11d20;
+        color: #fff;
+        border-color: #a11d20;
+        transform: scale(1.08);
+    }
 
     .back-btn {
         position: absolute;
         top: 18px;
         left: 18px;
-        background: #fff;
-        color: #d15822;
-        border: 1.5px solid #d15822;
+        background: rgba(243, 236, 236, 0.35);
+        color: #a11d20;
+        border: 1.5px solid #a11d20;
         border-radius: 8px;
         padding: 7px 16px;
         font-size: 1em;
@@ -155,15 +158,15 @@
     }
 
     .back-btn:hover, .back-btn:focus {
-        background: #d15822;
+        background: #a11d20;
         color: #fff;
-        border-color: #d15822;
+        border-color: #a11d20;
     }
 
     .view-gallery-btn {
-        background: #fff;
-        color: #d15822;
-        border: 2px solid #d15822;
+        background: rgba(243, 236, 236, 0.95);
+        color: #a11d20;
+        border: 2px solid #a11d20;
         border-radius: 24px;
         padding: 12px 32px;
         font-size: 1.13em;
@@ -178,8 +181,8 @@
 
     .view-gallery-btn:hover,
     .view-gallery-btn:focus {
-        background: #d15822;
+        background: #a11d20;
         color: #fff;
-        border-color: #d15822;
+        border-color: #a11d20;
         transform: scale(1.04);
     }

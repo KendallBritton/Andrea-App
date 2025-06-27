@@ -1,7 +1,7 @@
     body {
         margin: 0;
         font-family: 'Segoe UI', Arial, sans-serif;
-        background: #f6f7fb;
+        background: #d2d1f1;
         color: #2d3748;
     }
 
@@ -134,6 +134,7 @@
         cursor: pointer;
         margin-bottom: 8px;
         transition: background 0.2s, color 0.2s;
+        font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
     }
 
     .note-pagination button.active,
@@ -150,9 +151,9 @@
         position: absolute;
         top: 18px;
         left: 18px;
-        background: #fff;
-        color: #d15822;
-        border: 1.5px solid #d15822;
+        background: rgba(243, 236, 236, 0.35);
+        color: #a11d20;
+        border: 1.5px solid #a11d20;
         border-radius: 8px;
         padding: 7px 16px;
         font-size: 1em;
@@ -205,9 +206,9 @@
     }
 
     .back-btn:hover, .back-btn:focus {
-        background: #d15822;
+        background: #a11d20;
         color: #fff;
-        border-color: #d15822;
+        border-color: #a11d20;
     }
 
 .note-page {
