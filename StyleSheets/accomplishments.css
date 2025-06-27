@@ -145,24 +145,30 @@
             gap: 28px;
             align-items: center;
             justify-content: center;
-            /* Add this to ensure centering */
             width: 100%;
         }
         .accomplishment-item {
-            max-width: 375px;
-            width: 100%;
+            max-width: 320px;
+            width: 94vw;
             margin-left: auto;
             margin-right: auto;
         }
     }
 
     @media (max-width: 600px) {
-    .accomplishment-media {
-        height: 220px;
+        .accomplishment-item {
+            max-width: 98vw;
+            width: 98vw;
+            min-width: 0;
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
+        .accomplishment-media {
+            height: 160px;
+        }
+        .accomplishment-media img,
+        .accomplishment-media video {
+            height: 160px;
+            max-height: 160px;
+        }
     }
-    .accomplishment-media img,
-    .accomplishment-media video {
-        height: 220px;
-        max-height: 220px;
-    }
-}
