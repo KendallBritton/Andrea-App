@@ -144,10 +144,15 @@
             flex-direction: column;
             gap: 28px;
             align-items: center;
+            justify-content: center;
+            /* Add this to ensure centering */
+            width: 100%;
         }
         .accomplishment-item {
             max-width: 400px;
             width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
