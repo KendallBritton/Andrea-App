@@ -78,3 +78,35 @@ document.querySelectorAll('.card-section').forEach(section => {
     title.style.cursor = 'pointer';
     title.onclick = () => toggle.click();
 });
+
+document.querySelectorAll('.ui-card').forEach(card => {
+    const pages = JSON.parse(card.getAttribute('data-pages') || '[]');
+    if (pages.length > 0) {
+        // Remove any existing thumbnail to avoid duplicates
+        const oldThumb = card.querySelector('.card-thumb');
+        if (oldThumb) oldThumb.remove();
+
+        const thumb = document.createElement('img');
+        thumb.src = pages[0];
+        thumb.alt = 'Card thumbnail';
+        thumb.className = 'card-thumb';
+        thumb.style.width = '50%';
+        thumb.style.maxWidth = '180px';
+        thumb.style.height = 'auto';
+        thumb.style.display = 'block';
+        thumb.style.margin = '10px auto 20px auto';
+        thumb.style.borderRadius = '12px';
+        thumb.style.boxShadow = '0 2px 8px rgba(0,0,0,0.09)';
+        thumb.style.objectFit = 'contain';
+
+        // Insert thumbnail after the card title
+        const header = card.querySelector('.card-header');
+        if (header && header.nextSibling) {
+            card.insertBefore(thumb, header.nextSibling);
+        } else if (header) {
+            card.appendChild(thumb);
+        } else {
+            card.insertBefore(thumb, card.firstChild);
+        }
+    }
+});

@@ -69,7 +69,7 @@
         position: absolute;
         top: 18px;
         left: 18px;
-        background: #fff;
+        background: rgba(243, 236, 236, 0.35);
         color: #a11d20;
         border: 1.5px solid #a11d20;
         border-radius: 8px;
